@@ -26,3 +26,11 @@ jobs:
       - name: Run flake8 lint check
         working-directory: chrysoptera-stack/api
         run: flake8 main.py --max-line-length=100
+      
+      - name: Install test dependencies
+        working-directory: chrysoptera-stack/api
+        run: pip install pytest httpx
+
+      - name: Run tests
+        working-directory: chrysoptera-stack/api
+        run: pytest -v
