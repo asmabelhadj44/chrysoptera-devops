@@ -14,4 +14,3 @@ def readings():
         {"site_id": 1, "solar_output_kw": 4.2},
         {"site_id": 2, "solar_output_kw": 3.8}
     ]
-    
